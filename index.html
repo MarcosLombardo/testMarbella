@@ -1,9 +1,1163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Trece Noticias ofrece las últimas noticias de Costa Rica y el mundo. Mantente informado con nuestra cobertura actualizada y confiable." />
+
+        <!-- Incluye Font Awesome desde un CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous" />
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="styles/styles.css" />
+
+        <title>Trece Noticias | Noticias de hoy en Costa Rica y el mundo</title>
+    </head>
+    <body id="body">
+        <div>
+            <header class="sticky-top">
+                <nav class="nav justify-content-center">
+                    <li class="nav-item nomovi">
+                        <a
+                            class="nav-link"
+                            aria-current="page"
+                            href="#registro">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item nomovi">
+                        <a
+                            class="nav-link"
+                            aria-current="page"
+                            href="#registro">
+                            Canal Trece
+                        </a>
+                    </li>
+                    <li class="nav-item nomovi">
+                        <a
+                            class="nav-link"
+                            aria-current="page"
+                            href="#registro">
+                            Trece Noticias
+                        </a>
+                    </li>
+                    <li class="nav-item nomovi">
+                        <a
+                            class="nav-link"
+                            aria-current="page"
+                            href="#registro">
+                            La Nacional 101.5 FM
+                        </a>
+                    </li>
+                    <li class="nav-item nomovi">
+                        <a
+                            class="nav-link"
+                            aria-current="page"
+                            href="#registro">
+                            Deportivas del trece
+                        </a>
+                    </li>
+                    <li class="nav-item nomovi">
+                        <a
+                            class="nav-link"
+                            aria-current="page"
+                            href="#registro">
+                            Transparencia
+                        </a>
+                    </li>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg navbar-background">
+                    <div class="container">
+                        <img
+                            src="./assets/logo.png"
+                            alt="Logo Trece Noticias"
+                            class="logo me-auto" />
+
+                        <div
+                            class="offcanvas offcanvas-end"
+                            tabindex="-1"
+                            id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <img
+                                    src="./assets/logo.png"
+                                    alt="Logo Trece Noticias"
+                                    class="logo" />
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul
+                                    class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link mx-lg-2"
+                                            aria-current="page"
+                                            href="#registro">
+                                            Nacionales
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link mx-lg-2"
+                                            aria-current="page"
+                                            href="#registro">
+                                            Mundo
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link mx-lg-2"
+                                            aria-current="page"
+                                            href="#registro">
+                                            Tecnología
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link mx-lg-2"
+                                            aria-current="page"
+                                            href="#registro">
+                                            Economía
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link mx-lg-2"
+                                            aria-current="page"
+                                            href="#registro">
+                                            Entretenimiento
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#registro" class="login-button">Registrarse</a>
+                        <button
+                            class="navbar-toggler pe-8"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section class="container my-4">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 col12 contenidooil">
+                            <a href="#registro">
+                                <h1>
+                                    ¿Cómo Natalia Díaz Quintana ganó ₡8.100.000
+                                    en seis días con Oil Profit ¿Por qué tuvo
+                                    que detener la transmisión? ¡Detalles
+                                    impactantes del éxito!
+                                </h1>
+                            </a>
+                            <div class="text-center">
+                                <img
+                                    class="img-fluid"
+                                    src="./assets/fuentes.jpg"
+                                    alt="Fuentes de noticias" />
+                            </div>
+                            <div class="text-center">
+                                <img
+                                    class="img-fluid mb-4"
+                                    src="./assets/img1.jpg"
+                                    alt="Natalia Díaz Quintana" />
+                            </div>
+                            <!-- prettier-ignore -->
+                            <p class="mt-3">
+                                Hoy quiero compartir contigo la emocionante
+                                experiencia de mi inversión en
+                                <a href="#registro">Oil Profit</a>, un startup que revolucionó mis
+                                percepciones sobre lo posible en el mundo de la
+                                tecnología e <a href="#registro">inteligencia artificial</a>.
+                            </p>
+                            <!-- prettier-ignore -->
+                            <p>
+                                Cuando el equipo de <a href="#registro">Oil Profit</a>
+                                me contacto el otoño pasado, capturaron mi
+                                atención de inmediato. Su proyecto ambicioso,
+                                centrado en avanzar en la computación cuántica,
+                                me inspiró. Siempre he valorado las
+                                <a href="#registro">innovaciones</a> y las tecnologías futuras, y
+                                <a href="#registro">Oil Profit</a> presentó algo extraordinario: el
+                                potencial uso de la computación cuántica en aplicaciones del
+                                <a href="#registro">mundo real</a>, desde la optimización de procesos
+                                empresariales hasta <a href="#registro">la investigación médica.</a>
+                            </p>
+                            <!-- prettier-ignore -->
+                            <p>
+                                Reconociendo el potencial de este proyecto, tomé
+                                la decisión de invertiren <a href="#registro">Oil Profit</a>.
+                                Nuestra colaboración comenzó justo después de
+                                nuestro encuentro, y nos sumergimos en la realización de
+                                <a href="#registro">sus ideas ambiciosas</a>. 
+                                Invertí no solo mi dinero, sino también mi
+                                experiencia empresarial. Juntos, formulamos una
+                                estrategia de marketing sólida y un plan de
+                                promoción del producto, y asistí al equipo de
+                                <a href="#registro">Oil Profit</a> en la creación de un 
+                                modelo de negocio eficiente que tuviera éxito a largo plazo.
+                            </p>
+                            <!-- prettier-ignore -->
+                            <p>
+                                Los primeros meses estuvieron llenos de trabajo
+                                arduo y emoción. <a href="#registro">Oil Profit</a>
+                                desarrolló activamente <a href="#registro">sus tecnologías</a>,
+                                perfeccionándolas para aplicaciones industriales.
+                                Nuestro equipo pasó incontables horas explorando
+                                <a href="#registro">nuevas posibilidades</a> e ideando soluciones
+                                innovadoras. Cada día nos acercaba al momento en que nuestro
+                                <a href="#registro">producto</a> estuviera listo para el lanzamiento al mercado.
+                            </p>
+                            <!-- prettier-ignore -->
+                            <p>
+                                Sin embargo, debido al rápido crecimiento y la
+                                emoción asociada con este éxito, tuvimos que
+                                cancelar el anuncio de esta plataforma y eliminar toda la
+                                <a href="#registro">información</a> al respecto de Internet para manejar la
+                                abrumadora atención e <a href="#registro">investigaciones</a>.
+                                El increíble interés público y la atención mediática subrayaron la importancia de nuestro
+                                trabajo y demostraron cómo <a href="#registro">las tecnologías de Oil Profit</a>
+                                podrían cambiar el mundo.
+                            </p>
+                            <img
+                                class="img-fluid my-4"
+                                src="./assets/img2.jpg"
+                                alt="Natalia Díaz Quintana" />
+                            <!-- prettier-ignore -->
+                            <p>
+                                Por supuesto, estos desafíos no nos detuvieron.
+                                Finalmente, se abrió el acceso a inversiones, lo
+                                que permitió que <a href="#registro">Oil Profit</a>
+                                desplegara todo su potencial. Después de seis
+                                meses de esfuerzos diligentes, lanzamos con
+                                éxito <a href="#registro">Oil Profit</a>. Sus cálculos
+                                cuánticos se volvieron indispensables en diversas industrias.
+                                Se utilizaron <a href="#registro">en investigaciones</a>
+                                médicas para analizar vastas cantidades de datos, en el sector
+                                financiero para optimizar estrategias de inversión e incluso en el campo
+                                de <a href="#registro">la inteligencia artificial</a>
+                                para entrenar aprendizaje automático basado en algoritmos cuánticos.
+                            </p>
+                            <!-- prettier-ignore -->
+                            <p>
+                                En tan solo seis meses desde mi inversión, <a href="#registro">Oil Profit</a>
+                                alcanzó alturas asombrosas. El valor de mi inversión se multiplicó varias veces,
+                                y obtuve impresionantes <a href="#registro">₡8.100.000</a>.
+                                Pero sinceramente, para mí, se trataba de algo más que dinero.
+                                Encontré una mayor satisfacción al presenciar cómo nuestro proyecto estaba
+                                cambiando el mundo que nos rodea.
+                            </p>
+                            <!-- prettier-ignore -->
+                            <p>
+                                <a href="#registro">Oil Profit</a> hizo que la computación cuántica fuera accesible
+                                y útil para un amplio público. Creamos <a href="#registro">tecnologías</a>
+                                que ayudan a resolver problemas complejos de manera más rápida y eficiente. Contribuimos a la
+                                ciencia, la medicina y <a href="#registro">el progreso tecnológico</a>. Sin embargo,
+                                esto fue solo el comienzo. Continuamos explorando, creciendo y o nuevas
+                                posibilidades para el futuro.
+                            </p>
+                            <!-- prettier-ignore -->
+                            <p>
+                                <a href="#registro"> Esta historia no es solo el relato exitoso 
+                                de un inversionista y una startup.</a> Es una historia sobre cómo la creencia en
+                                <a href="#registro">la innovación</a>, el esfuerzo persistente y los esfuerzos
+                                colaborativos pueden cambiar el mundo.
+                            </p>
+                            <!-- prettier-ignore -->
+                            <p>
+                                Anuncio oficialmente que estoy abriendo el acceso a <a href="#registro">la plataforma</a>,
+                                pero los lugares serán limitados. Las primeras 100 personas afortunadas que hayan enviado su
+                                solicitud después de ver el anuncio en Facebook podrán invertir. Es muy sencillo; si tienes la
+                                suerte de convertirte en participante, espera una llamada de uno de nuestros gerentes y te
+                                ayudarán a comenzar lo antes posible. Ten en cuenta que la inversión mínima es de
+                                <a href="#registro">₡135.000</a>.
+                            </p>
+                            <img
+                                class="img-fluid mt-4"
+                                src="./assets/img3.jpg"
+                                alt="Natalia Díaz Quintana" />
+                            <a href="#registro">
+                                <div class="blockdata">
+                                    Natalia Díaz Quintana anuncia en vivo a Oil
+                                    Profit
+                                </div>
+                            </a>
+                            <p class="mt-4">
+                                <strong>
+                                    Ganancias de los usuarios del día anterior
+                                    en
+                                    <a href="#registro">Oil Profit</a>
+                                </strong>
+                            </p>
+                            <p>
+                                Los datos se actualizan en tiempo real, cada 5
+                                segundos desde la plataforma oficial de Oil
+                                Profit.
+                            </p>
+                            <div class="super-table my-3">
+                                <div class="item-table color" style="order: 0">
+                                    <div class="name">
+                                        <span class="circle"></span>
+                                        <b>Nombre</b>
+                                    </div>
+                                    <div class="win"><b>Ganancia</b></div>
+                                    <div class="city"><b>Ciudad</b></div>
+                                </div>
+                                <div id="data-container"></div>
+                            </div>
+                            <p><strong>ACTUALIZACIÓN</strong></p>
+                            <!-- prettier-ignore -->
+                            <p>
+                                Acabamos de recibir noticias que, a partir de hoy <b id="fecha"></b>, 
+                                casi todas las posiciones están ocupadas <a href="#registro">Oil Profit</a> solo puede aceptar
+                                un número limitado de usuarios totales para mantener altas las ganancias por usuario. En este
+                                momento, aún quedan (37) lugares disponibles, así que apúrate y regístrate ahora para asegurar tu lugar.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 col-12 contenidooil">
+                            <div class="modal-form">
+                                <div id="registro">
+                                    <div class="head-form">
+                                        <h2>Inscripción gratuita</h2>
+                                    </div>
+                                </div>
+                                <div class="form-container">
+                                    <div class="fromwrap-outer">
+                                        <div
+                                            class="intgrtn-form-singup formwrap">
+                                            <form
+                                                id="form"
+                                                action="/"
+                                                autocomplete="off">
+                                                <div class="input-control">
+                                                    <input
+                                                        id="firstname"
+                                                        name="firstname"
+                                                        type="text"
+                                                        placeholder="Nombre" />
+                                                    <div class="error"></div>
+                                                </div>
+
+                                                <div class="input-control">
+                                                    <input
+                                                        id="lastname"
+                                                        name="lastname"
+                                                        type="text"
+                                                        placeholder="Apellido" />
+                                                    <div class="error"></div>
+                                                </div>
+                                                <div class="input-control">
+                                                    <input
+                                                        id="email"
+                                                        name="email"
+                                                        type="text"
+                                                        placeholder="Correo Electrónico" />
+                                                    <div class="error"></div>
+                                                </div>
+                                                <div class="input-control">
+                                                    <input
+                                                        id="phone"
+                                                        name="phone"
+                                                        type="number"
+                                                        placeholder="Número de teléfono" />
+                                                    <div class="error"></div>
+                                                </div>
+                                                <div class="button-container">
+                                                    <button type="submit">
+                                                        Regístrate ahora
+                                                    </button>
+                                                </div>
+                                                <div class="text-center pt-2">
+                                                    <small
+                                                        style="
+                                                            display: block;
+                                                            font-weight: bold;
+                                                        ">
+                                                        * Monto mínimo de
+                                                        inversión ₡135.000
+                                                    </small>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comment mb-5">
+                                <p class="comment-line">Comentarios</p>
+                                <div class="comment-content">
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar1.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    José López
+                                                </div>
+                                                ¿Realmente funciona? He oído
+                                                algo parecido, pero nunca he
+                                                visto ninguna reseña.
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                12 h
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        10
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar2.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    Luis Martínez
+                                                </div>
+                                                Natalia Díaz Quintana
+                                                definitivamente sabe como hacer
+                                                dinero. Saludos 👏🔥
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                16 m
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        23
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar3.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    Carlos Rodríguez
+                                                </div>
+                                                Acabo de retirar mis ganancias
+                                                ... Activa tu cerebro y
+                                                apúntate. Estás perdiendo una
+                                                oportunidad de la que te
+                                                arrepentirás el resto de tu
+                                                vida.
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                1 h
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        24
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar4.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    Juan García
+                                                </div>
+                                                Hace tiempo escuche hablar de
+                                                esta plataforma pero cada vez
+                                                olvidaba averiguar sobre ella 🤦‍♂️
+                                                gracias Natalia Díaz Quintana
+                                                por esta información :)
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                12 m
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        23
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar5.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    David Mejía
+                                                </div>
+                                                Finalmente pude comprar un auto
+                                                nuevo. No es vida, sino un
+                                                sueño... Los sueños se hacen
+                                                realidad)))
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                12 m
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        5
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar6.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    María Paz
+                                                </div>
+                                                Ahora tengo la oportunidad de ir
+                                                de vacaciones este año :) Y lo
+                                                mejor es que mientras este de
+                                                vacaciones, el sistema ganará
+                                                dinero día y noche. Es un sueño
+                                                hecho realidad.
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                14 m
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        22
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar7.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    Daniel Cruz
+                                                </div>
+                                                Me registré la semana pasada y
+                                                ya he ganado
+                                                ₡1&nbsp;421&nbsp;053 Lo
+                                                recomiendo a todo el mundo 😏
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                3 h
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        22
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar8.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    Mario Flores
+                                                </div>
+                                                Gracias por la info Trece
+                                                Noticias
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                3 h
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        1
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar9.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    Francisco Rivera
+                                                </div>
+                                                Acabo de inscribirme, amigos,
+                                                ¡deséenme suerte!
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                3 h
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        5
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar10.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    Jorge Reyes
+                                                </div>
+                                                Natalia Díaz Quintana causa
+                                                polémica pero es inteligente ¡he
+                                                visto muchas de sus entrevistas!
+                                                Creo que la plataforma realmente
+                                                vale la pena.
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                3 h
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        11
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar11.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    Manuel Pineda
+                                                </div>
+                                                Me registré hace dos días, mi
+                                                saldo ya es de ₡738&nbsp;947,
+                                                estoy pensando en solicitar un
+                                                retiro o es demasiado pronto? De
+                                                hecho, no hice nada, de alguna
+                                                manera me lo gané
+                                                automáticamente. 😅😅😅
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                5 h
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        21
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar12.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    Josefa Zelaya
+                                                </div>
+                                                Estoy sorprendida y mis amigos
+                                                también... Al principio pensé
+                                                que era algún tipo de estafa, no
+                                                estaba claro como funciona. Pero
+                                                entonces el gerente se puso en
+                                                contacto conmigo y me explicó
+                                                todo con detalle, ¡resultó ser
+                                                muy sencillo! Siempre he
+                                                trabajado mucho y no creía que
+                                                fuera posible ganar dinero de
+                                                esa manera. Para abreviar la
+                                                historia, compré un auto. Suerte
+                                                a todos, recomiendo mucho esta
+                                                plataforma 👍
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                5 h
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        13
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-block block">
+                                        <div class="block-avatar">
+                                            <a href="#registro">
+                                                <img
+                                                    src="./assets/avatar13.jpg"
+                                                    alt="avatar"
+                                                    width="50px" />
+                                            </a>
+                                        </div>
+                                        <div class="block-info">
+                                            <div class="block-info-comment">
+                                                <div
+                                                    class="block-info-comment__name">
+                                                    Miguel Ramos
+                                                </div>
+                                                Gracias por la información,
+                                                empecé con esto hace 4 semanas
+                                                en un programa piloto como
+                                                Natalia Díaz Quintana. Recibí 12
+                                                cheques por un total de
+                                                ₡9&nbsp;236&nbsp;842 es muy
+                                                bueno.
+                                            </div>
+                                            <div class="block-info-line"></div>
+                                            <div class="block-info-line__date">
+                                                5 h
+                                            </div>
+                                            <div class="block-info-line__like">
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Me gusta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        Respuesta
+                                                    </a>
+                                                </li>
+                                                <li
+                                                    class="block-info-line__like_item">
+                                                    <a href="#registro">
+                                                        <i
+                                                            class="far fa-thumbs-up"
+                                                            aria-hidden="true"></i>
+                                                        16
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <section class="footer-top">
+                        <div class="footer-headline">
+                            <h2>Suscríbite al newsletter</h2>
+                            <p>Y así enterate de todas las novedades</p>
+                        </div>
+                        <div class="footer-subscribe">
+                            <input
+                                type="email"
+                                spellcheck="false"
+                                placeholder="Correo Electrónico" />
+                            <button>Suscribirse</button>
+                        </div>
+                    </section>
+                    <div class="footer-columns">
+                        <section class="footer-logo">
+                            <img
+                                class="logo"
+                                src="./assets/logo.png"
+                                alt="Logo Trece Noticias" />
+                        </section>
+
+                        <section>
+                            <h3>De Lunes a Domingo</h3>
+                            <h3>6:30am - 12md - 6pm</h3>
+                        </section>
+
+                        <section>
+                            <h3>@trecenoticiascr</h3>
+                        </section>
+
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="social-links">
+                            <ul>
+                                <li>
+                                    <a href="#" title="Instagram">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c2c2c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Linkedin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c2c2c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Twitter">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c2c2c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Youtube">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c2c2c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#2c2c2c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                                         </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <small>
+                            © Marcos.dev Ltd. 2024, todos los derechos reservados
+                        </small>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./scripts/index.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </body>
 </html>
