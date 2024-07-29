@@ -1,3 +1,15 @@
+// Contador de personas
+
+document.addEventListener("DOMContentLoaded", () => {
+    alertify.set("notifier", "position", "top-right");
+    const viewersCount = Math.floor(Math.random() * (50 - 10)) + 10;
+    alertify.notify(
+        `Actualmente hay ${viewersCount} personas viendo esta página.`,
+        "message",
+        5
+    );
+});
+
 // Tabla de ganancias
 
 // prettier-ignore
@@ -99,7 +111,16 @@ const phone = document.getElementById("phone");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    validateInputs();
+    if (validateInputs()) {
+        Swal.fire({
+            title: "¡Formulario enviado!",
+            text: "Su formulario ha sido enviado exitosamente.",
+            icon: "success",
+            confirmButtonText: "Aceptar",
+        }).then(() => {
+            resetForm();
+        });
+    }
 });
 
 const setError = (element, message) => {
@@ -132,29 +153,50 @@ const validateInputs = () => {
     const lastnameValue = lastname.value.trim();
     const phoneValue = phone.value.trim();
 
+    let isValid = true;
+
     if (firstnameValue === "") {
         setError(firstname, "El nombre es requerido");
+        isValid = false;
     } else {
         setSuccess(firstname);
     }
 
     if (lastnameValue === "") {
         setError(lastname, "El apellido es requerido");
+        isValid = false;
     } else {
         setSuccess(lastname);
     }
 
     if (emailValue === "") {
         setError(email, "El email es requerido");
+        isValid = false;
     } else if (!isValidEmail(emailValue)) {
         setError(email, "El email es inválido");
+        isValid = false;
     } else {
         setSuccess(email);
     }
 
     if (phoneValue === "") {
-        setError(phone, "El número de télefono es requerido");
+        setError(phone, "El número de teléfono es requerido");
+        isValid = false;
     } else {
         setSuccess(phone);
     }
+
+    return isValid;
+};
+
+const resetForm = () => {
+    form.reset();
+    const inputControls = document.querySelectorAll(".input-control");
+    inputControls.forEach((control) => {
+        control.classList.remove("success", "error");
+        const errorDisplay = control.querySelector(".error");
+        if (errorDisplay) {
+            errorDisplay.innerText = "";
+        }
+    });
 };
