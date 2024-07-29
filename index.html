@@ -28,6 +28,9 @@
         <!-- Estilos Alertify -->
         <link href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" rel="stylesheet">
+        <!-- Teléfonos -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.7.3/build/css/intlTelInput.css"> -->
+
 
         <title>Trece Noticias | Noticias de hoy en Costa Rica y el mundo</title>
     </head>
@@ -113,7 +116,7 @@
                                     class="navbar-nav justify-content-center flex-grow-1 pe-3">
                                     <li class="nav-item">
                                         <a
-                                            class="nav-link mx-lg-2"
+                                            class="nav-link mx-lg-2 color-navtext"
                                             aria-current="page"
                                             href="#registro">
                                             Nacionales
@@ -121,7 +124,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a
-                                            class="nav-link mx-lg-2"
+                                            class="nav-link mx-lg-2 color-navtext"
                                             aria-current="page"
                                             href="#registro">
                                             Mundo
@@ -129,7 +132,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a
-                                            class="nav-link mx-lg-2"
+                                            class="nav-link mx-lg-2 color-navtext"
                                             aria-current="page"
                                             href="#registro">
                                             Tecnología
@@ -137,7 +140,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a
-                                            class="nav-link mx-lg-2"
+                                            class="nav-link mx-lg-2 color-navtext"
                                             aria-current="page"
                                             href="#registro">
                                             Economía
@@ -145,7 +148,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a
-                                            class="nav-link mx-lg-2"
+                                            class="nav-link mx-lg-2 color-navtext"
                                             aria-current="page"
                                             href="#registro">
                                             Entretenimiento
@@ -378,7 +381,8 @@
                                                         id="lastname"
                                                         name="lastname"
                                                         type="text"
-                                                        placeholder="Apellido" />
+                                                        placeholder="Apellido"
+                                                         />
                                                     <div class="error"></div>
                                                 </div>
                                                 <div class="input-control">
@@ -393,12 +397,15 @@
                                                     <input
                                                         id="phone"
                                                         name="phone"
-                                                        type="number"
-                                                        placeholder="Número de teléfono" />
+                                                        type="tel"
+                                                        placeholder="Número de teléfono"
+                                                         />
                                                     <div class="error"></div>
                                                 </div>
+
+                                                
                                                 <div class="button-container">
-                                                    <button type="submit">
+                                                    <button type="submit" class="boton">
                                                         Regístrate ahora
                                                     </button>
                                                 </div>
@@ -1140,7 +1147,7 @@
                                     </a>
                         </div>
                         <small>
-                            © Marcos.dev Ltd. 2024, todos los derechos reservados
+                            © <a href="https://marcoslombardo.vercel.app/" target="_blank" class="marcos"><strong>marcos.dev</strong></a>. 2024, todos los derechos reservados
                         </small>
                     </div>
                 </div>
@@ -1161,5 +1168,10 @@
 
         <!-- Alertify -->
         <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+        <!-- International Telephone Input -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.7.3/build/js/intlTelInput.min.js"></script>
+        <script>const input = document.querySelector("#phone"); window.intlTelInput(input, {initialCountry: "Cr", separateDialCode: true,  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.7.3/build/js/utils.js"});</script> -->
+        
     </body>
 </html>

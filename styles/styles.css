@@ -16,7 +16,15 @@ html body p {
 }
 
 .nav-link {
-    color: #2c2c2c;
+    color: gray;
+}
+
+.color-navtext {
+    color: #fff;
+}
+
+div .color-navtext:hover {
+    color: #fff;
 }
 
 .navbar-background {
@@ -32,7 +40,7 @@ html body p {
 }
 
 .nav-link:hover {
-    color: #696969;
+    color: #676767;
 }
 
 .login-button {
@@ -195,7 +203,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-#form button {
+#form .boton {
     padding: 15px;
     margin-top: 10px;
     width: 60%;
@@ -209,7 +217,7 @@ input[type="number"]::-webkit-outer-spin-button {
     transition: 0.3s background-color;
 }
 
-#form button:hover {
+#form .boton:hover {
     background-color: #871111;
 }
 
@@ -485,6 +493,11 @@ footer {
     transform: translate3d(0, 0, 0);
 }
 
+.marcos {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
 @media (max-width: 800px) {
     .footer-top {
         display: flex;
@@ -512,6 +525,14 @@ footer {
 @media screen and (max-width: 991px) {
     .nav {
         background: none;
+    }
+
+    .color-navtext {
+        color: gray;
+    }
+
+    div .color-navtext:hover {
+        color: #676767;
     }
 
     .nomovi {

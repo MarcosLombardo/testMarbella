@@ -147,6 +147,16 @@ const isValidEmail = (email) => {
     return re.test(String(email).toLowerCase());
 };
 
+const isValidPhoneNumber = (phone) => {
+    const minLength = 7;
+    const maxLength = 15;
+    const re = /^[0-9]+$/;
+
+    return (
+        re.test(phone) && phone.length >= minLength && phone.length <= maxLength
+    );
+};
+
 const validateInputs = () => {
     const firstnameValue = firstname.value.trim();
     const emailValue = email.value.trim();
@@ -181,6 +191,9 @@ const validateInputs = () => {
 
     if (phoneValue === "") {
         setError(phone, "El número de teléfono es requerido");
+        isValid = false;
+    } else if (!isValidPhoneNumber(phoneValue)) {
+        setError(phone, "El número de teléfono es inválido");
         isValid = false;
     } else {
         setSuccess(phone);
